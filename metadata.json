@@ -1,0 +1,8 @@
+{
+  "name": " قناة أولى ثانوى التعليمية ",
+  "description": "تطبيق لعرض قنوات البث المباشر على يوتيوب بتصميم عصري وداكن مخصص",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
