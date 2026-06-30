@@ -53,12 +53,12 @@ export default function PlanModal({ isOpen, onClose, channel }: PlanModalProps) 
                   key={vid.uid || vid.id || index}
                   className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 p-4 rounded-2xl bg-neutral-950/40 border border-neutral-800 hover:border-neutral-700/50 transition-all duration-200 group"
                 >
-                  <div className="flex items-start gap-3.5 min-w-0">
+                  <div className="flex items-start gap-3.5 min-w-0 flex-1">
                     <span className="w-8 h-8 flex items-center justify-center bg-indigo-500/10 text-indigo-300 border border-indigo-500/20 font-bold rounded-xl shrink-0 text-sm">
                       {index + 1}
                     </span>
-                    <div className="min-w-0 space-y-1">
-                      <h4 className="text-sm font-medium text-white line-clamp-2 leading-relaxed" title={vid.title}>
+                    <div className="min-w-0 flex-1 space-y-1">
+                      <h4 className="text-sm font-semibold text-white line-clamp-2 leading-relaxed" title={vid.title}>
                         {vid.title || "بث مبرمج"}
                       </h4>
                       {vid.createdAt && (
@@ -75,7 +75,7 @@ export default function PlanModal({ isOpen, onClose, channel }: PlanModalProps) 
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-gradient-to-r from-teal-500 to-teal-400 hover:from-teal-400 hover:to-teal-300 text-neutral-950 font-semibold text-xs sm:text-sm rounded-xl shadow-lg shadow-teal-500/10 transition-all hover:scale-[1.03] active:scale-95 shrink-0 self-end sm:self-center cursor-pointer select-none border border-teal-300/20"
                   >
-                    <span>عرض الرابط</span>
+                    <span>عرض الفيديو</span>
                     <ExternalLink className="w-4 h-4" />
                   </a>
                 </div>

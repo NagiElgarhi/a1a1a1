@@ -195,7 +195,7 @@ export default function LandingPage() {
                   </button>
                   
                   {showChannelDropdown && channels.length > 1 && (
-                    <div className="absolute top-[110%] left-0 w-full bg-black/95 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl p-2 z-50 flex flex-col gap-1.5 max-h-60 overflow-y-auto custom-scrollbar animate-in slide-in-from-top-2 fade-in zoom-in-95">
+                    <div className="absolute top-[110%] max-sm:left-1/2 max-sm:-translate-x-1/2 max-sm:w-[95vw] sm:right-0 sm:w-[200%] bg-black/95 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl p-2 z-50 flex flex-col gap-1.5 max-h-60 overflow-y-auto custom-scrollbar animate-in slide-in-from-top-2 fade-in zoom-in-95">
                       {channels.map((chan) => (
                         <button
                           key={chan.id}
@@ -233,7 +233,7 @@ export default function LandingPage() {
                   </button>
                   
                   {showPlanDropdown && channels.length > 1 && (
-                    <div className="absolute top-[110%] left-0 w-full bg-black/95 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl p-2 z-50 flex flex-col gap-1.5 max-h-60 overflow-y-auto custom-scrollbar animate-in slide-in-from-top-2 fade-in zoom-in-95">
+                    <div className="absolute top-[110%] max-sm:left-1/2 max-sm:-translate-x-1/2 max-sm:w-[95vw] sm:left-0 sm:w-[200%] bg-black/95 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl p-2 z-50 flex flex-col gap-1.5 max-h-60 overflow-y-auto custom-scrollbar animate-in slide-in-from-top-2 fade-in zoom-in-95">
                       {channels.map((chan) => (
                         <button
                           key={chan.id}
